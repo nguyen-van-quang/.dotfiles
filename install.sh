@@ -6,11 +6,10 @@ DOT_FILES="$HOME/.dotfiles"
 # [-----DEVELOPMENT TOOLS-----]
 echo "INSTALLING DEVELOPMENT TOOLS 🛠"
 
-cask_args appdir: '/Applications'
-
 echo "installing oh_my_zsh"
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-ln -sf $DOT_FILES/oh-my-zsh/.aliases $HOME/.aliases
+rm -rf $HOME/.oh-my-zsh && 
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && 
+ln -sf $DOT_FILES/oh-my-zsh/.aliases $HOME/.aliases && 
 ln -sf $DOT_FILES/oh-my-zsh/.zshrc $HOME/.zshrc
 
 
