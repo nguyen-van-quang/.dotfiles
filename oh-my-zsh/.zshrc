@@ -54,6 +54,7 @@ DEFAULT_USER=$USER
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git zsh-completions zsh-syntax-highlighting z)
+plugins=(git z)
 
 source $ZSH/oh-my-zsh.sh
 # User configuration
