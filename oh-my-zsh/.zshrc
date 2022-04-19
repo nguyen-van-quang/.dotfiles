@@ -89,15 +89,3 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-#. /usr/local/etc/profile.d/z.sh
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-[[ -f ~/.aliases ]] && source ~/.aliases
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm" 
-source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Enable vi mode
-bindkey -v
-
-. $(brew --prefix)/etc/profile.d/z.sh
