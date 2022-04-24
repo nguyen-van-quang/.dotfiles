@@ -20,7 +20,8 @@ set nofixendofline
 let g:python3_host_prog = '/usr/local/bin/python3'
 
 call plug#begin('~/.vim/plugged')
-Plug 'ctrlpvim/ctrlp.vim' 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'morhetz/gruvbox'
 Plug 'othree/html5.vim'
 Plug 'jiangmiao/auto-pairs'
@@ -59,4 +60,10 @@ let g:lightline = {
       \ }
       \ }
 
+" Setup for :find command
+" https://youtu.be/XA2WjJbmmoM?t=378
+set path+=**
+set wildmenu
+set wildignore+=comma,separated,list,of,file,patterns
 
+nnoremap <silent> <Leader>f :Ag<CR>
