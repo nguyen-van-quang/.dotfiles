@@ -66,4 +66,3 @@ set path+=**
 set wildmenu
 set wildignore+=comma,separated,list,of,file,patterns
 
-nnoremap <silent> <Leader>f :Ag<CR>
