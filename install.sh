@@ -17,7 +17,22 @@ ln -sf $DOT_FILES/oh-my-zsh/.zshrc $HOME/.zshrc
 echo "installing alacritty"
 brew install --cask alacritty
 rm -rf $HOME/.config/alacritty && mkdir $HOME/.config/alacritty && ln -sf $DOT_FILES/alacritty/alacritty.yml $HOME/.config/alacritty/
+# install themes managements for alacritty
+npm i -g alacritty-themes
 
+echo "installing glow: markdow rendering on terminal"
+brew install glow
+echo "let config glow"
+echo "# style name or JSON path (default "auto")
+style: "light"
+# show local files only; no network (TUI-mode only)
+local: true
+# mouse support (TUI-mode only)
+mouse: true
+# use pager to display markdown
+pager: true
+# word-wrap at width
+width: 80" > $HOME/Library/Preferences/glow/glow.yml
 
 echo "installing z"
 brew install z

@@ -5,8 +5,8 @@ syntax on
 set termguicolors
 let g:gruvbox_contrast_dark = 'hard'
 let g:gruvbox_contrast_light= 'hard' " hard/medium/soft
-set bg=light
-colorscheme gruvbox
+"set bg=light
+"colorscheme gruvbox
 
 set guifont=FiraCode\ Nerd\ Font
 set number
@@ -22,6 +22,7 @@ let g:python3_host_prog = '/usr/local/bin/python3'
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'morhetz/gruvbox'
 Plug 'othree/html5.vim'
 Plug 'jiangmiao/auto-pairs'
