@@ -104,3 +104,6 @@ export PATH=$COCOS_X_ROOT:$PATH
 # Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
 export COCOS_TEMPLATES_ROOT="/Users/quangnotes/Github/cocos2d-x/templates"
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+
+# Add enviroment variable JAVA_HOME
+export JAVA_HOME=$(/usr/libexec/java_home)
