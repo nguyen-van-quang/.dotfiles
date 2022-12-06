@@ -48,6 +48,7 @@ brew install tree
 echo "installing tmux"
 brew install tmux
 ln -sf $DOT_FILES/tmux/.tmux.conf $HOME/.tmux.conf
+tmux source-file $HOME/.tmux.con
 
 
 echo "installing neovim"
