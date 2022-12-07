@@ -54,6 +54,9 @@ tmux source-file $HOME/.tmux.con
 echo "installing neovim"
 brew install neovim
 rm -rf $HOME/.config/nvim && ln -sf $DOT_FILES/nvim $HOME/.config/
+# install vim-plug
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 
 echo "installing fzf"
