@@ -106,4 +106,9 @@ export COCOS_TEMPLATES_ROOT="/Users/quangnotes/Github/cocos2d-x/templates"
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 
 # Add enviroment variable JAVA_HOME
-export JAVA_HOME=$(/usr/libexec/java_home)
+# export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
