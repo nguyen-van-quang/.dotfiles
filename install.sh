@@ -16,6 +16,11 @@ mkdir $DOT_FILES/oh-my-zsh/themes
 git clone https://github.com/dracula/zsh.git $DOT_FILES/oh-my-zsh/themes/dracula
 ln -s $DOT_FILES/oh-my-zsh/themes/dracula/dracula.zsh-theme $HOME/.oh-my-zsh/themes/dracula.zsh-theme
 
+#Install python2
+brew install pyenv
+pyenv install 2.7.18
+export PATH="$(pyenv root)/shims:${PATH}"
+echo 'PATH=$(pyenv root)/shims:$PATH' >> ~/.zshrc
 
 echo "installing alacritty"
 brew install --cask alacritty
